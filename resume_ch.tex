@@ -22,10 +22,12 @@
 
 % !TeX program = xelatex
 \documentclass{resume} % Use the custom resume.cls style
-\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+%\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[left=0.65in,top=0.6in,right=0.65in,bottom=0.6in]{geometry} % Document margins
 \usepackage{xeCJK}
 \usepackage{color}
 \usepackage[citecolor=green]{hyperref}
+\hypersetup{hidelinks}
 %导入图片
 
 
@@ -56,10 +58,9 @@
 \begin{rSection}{技能}
 \begin{rSubsection}
 {}{}{}{}
-\item[-] 编程语言： 熟悉 C/C++，熟悉STl模板库的使用，了解C++并发与锁相关知识\\
- 了解Go，了解shell、node.js，了解前端基础和Vue框架
-\item[-] 计算机基础： 熟悉计算机组成和结构，熟悉常见的数据结构和算法，熟悉操作系统基础，了解多线程与网络编程。
-\item[-] 其它: 熟悉Linux常用操作和命令，了解docker的使用，能熟练使用Git进行版本控制，熟悉 MySQL数据库与openGauss云数据库。
+\item[-] 编程语言： 熟悉 C/C++，熟悉STL模板库的使用，熟悉SQL，了解C++并发与锁相关知识;了解Go，了解Shell，了解Node.js、前端基础和Vue框架
+\item[-] 计算机基础： 熟悉计算机组成和结构，熟悉常见的数据结构和算法，熟悉操作系统基础，熟悉网络编程
+\item[-] 其它: 熟悉Linux常用操作和命令，能熟练使用Git进行版本控制，熟悉 MySQL数据库与openGauss云数据库，了解docker的使用
 \end{rSubsection}
 \end{rSection}
 
@@ -69,63 +70,47 @@
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{项目 / 研究经历}
-\begin{rSubsection}{1.腾讯游戏客户端安全菁英班(电子科大30人班)}{\em 2022.10 – 2023.3}
-{\textbf{项目介绍：}腾讯老师线上授课(内容为游戏客户端安全与逆向分析基础)+完成课后项目，课后项目包括对游戏FlappyBird进行注入和修改、对APP显示内容进行HOOK、破解一个ELF文件，以及为一个PFS游戏实现游戏透视与自瞄。} \
-{\textbf{项目收获：}掌握了windows和linux平台进行注入的方式，了解一些逆向分析工具如CE、IDA、ReClass、的使用，掌握了使用IDA对远程进程进行动态调试，以及通过实战了解了FPS游戏透视和自瞄的简单实现。} \\
+\begin{rSubsection}{1.腾讯游戏客户端安全菁英班(电子科大30人班)}{\em 2022.10 – 2023.3} \\
+{\textbf{项目介绍：}腾讯老师线上授课(内容为游戏客户端安全与逆向分析基础)+完成课后项目，课后项目包括对游戏FlappyBird进行注入和修改、对APP显示内容进行更改、破解一个加密ELF文件，以及为AssaultCube游戏实现透视与自瞄。} \\
+{\textbf{项目收获：}掌握了windows和linux平台进行注入的方式，了解一些逆向分析工具如CE、IDA、ReClass的使用，掌握了使用IDA对远程进程进行动态调试的方法，以及通过实战了解了FPS游戏透视和自瞄的简单实现。} \\
 {\textbf{项目成果：}} 
 \item[]
 \begin{itemize}
 \setlength\itemsep{-0.5em}
-\item[] 
-%\item[-] 通过动态调试破解一个加密ELF文件：  \  \rm \url{https://blog.csdn.net/astruggle___/article/details/129377398?spm=1001.2014.3001.5501}
-%\item[-] 为游戏AssaultCube实现透视和自瞄：  \  Github: \rm \url{https://github.com/L1uZQ/Assaultcube_Cheat_onlyStudy}
+\item[-] IDA动态调试破解一个加密ELF文件： \rm \url{blog.csdn.net/astruggle___/article/details/129377398?spm=1001.2014.3001.5501}
+\item[-] 为游戏AssaultCube实现透视和自瞄： \rm \url{https://github.com/L1uZQ/Assaultcube_Cheat_onlyStudy}
 \end{itemize}
 \end{rSubsection}
 
-\begin{rSubsection}{1.腾讯游戏客户端安全菁英班(电子科大30人班)}{\em 2022.10 – 2023.3}
-{\textbf{项目介绍：}腾讯老师线上授课(内容为游戏客户端安全与逆向分析基础)+完成课后项目，课后项目包括对游戏FlappyBird进行注入和修改、对APP显示内容进行HOOK、破解一个ELF文件，以及为一个PFS游戏实现游戏透视与自瞄。} \
-{\textbf{项目收获：}掌握了windows和linux平台进行注入的方式，了解一些逆向分析工具如CE、IDA、ReClass、的使用，掌握了使用IDA对远程进程进行动态调试，以及通过实战了解了FPS游戏透视和自瞄的简单实现。} \\
+
+\begin{rSubsection}{2.小米暑期快应用训练营}{\em 2022.6 - 2022.8} \\
+{\textbf{项目介绍：}先由小米老师讲授前端三件套加快应用开发基础，之后个人独立开发一个具有震动提醒和kaldi语音识别的TodoList待办事项快应用。} \\
+{\textbf{项目收获：}了解了前端基础，掌握了安卓平台一些接口的调用方式，通过实战的方式了解了js定时器的应用，了解了一些开发规范和注意事项。} \\
 {\textbf{项目成果：}} 
-\item[]
-\begin{itemize}
-\setlength\itemsep{-0.5em}
-\item[] 
-%\item[-] 通过动态调试破解一个加密ELF文件：  \  \rm \url{https://blog.csdn.net/astruggle___/article/details/129377398?spm=1001.2014.3001.5501}
-%\item[-] 为游戏AssaultCube实现透视和自瞄：  \  Github: \rm \url{https://github.com/L1uZQ/Assaultcube_Cheat_onlyStudy}
-\end{itemize}
+
+%\item[]
+%\begin{itemize}
+%\setlength\itemsep{-0.5em}
+%\item[-] 快简记- \  Github: \rm \url{https://github.com/L1uZQ/todolist-project}
+%\end{itemize}
+
+快简记 Github: \rm \url{https://github.com/L1uZQ/todolist-project}
 \end{rSubsection}
 
 
 
 
-\begin{rSubsection}{2.小米暑期快应用训练营} {\em 2022.6 - 2022.8}
-%{\textbf{项目介绍：}先由小米老师讲授前端三件套加快应用开发基础，之后个人独立开发一个具有震动提醒和kaldi语音识别的TodoList待办事项快应用。} \\
-{\noindent \textbf{项目介绍：}腾讯老师线上授课(内容为游戏客户端安全与逆向分析基础)+完成课后项目，课后项目包括对游戏FlappyBird进行注入和修改、对APP显示内容进行HOOK、破解一个ELF文件，以及为一个PFS游戏实现游戏透视与自瞄。} \
-{项目收获：掌握了windows和linux平台进行注入的方式，了解一些逆向分析工具如CE、IDA、ReClass、的使用，掌握了使用IDA对远程进程进行动态调试，以及通过实战了解了FPS游戏透视和自瞄的简单实现。} 
-{}
-%{\textbf{项目收获：}了解了前端基础，掌握了安卓平台一些接口的调用方式，通过实战的方式了解了js定时器的应用，了解了一些开发规范和注意事项。} \
-%{\textbf{项目成果：} 快简记- Github: \rm \url{https://github.com/L1uZQ/todolist-project}} 
-\item[]
-\begin{itemize}
-\setlength\itemsep{-0.5em}
-\item[]
-\item[-] 支持修改待办事项
-%\item[-] 使用 kaldi接口 进行语音输入待办事项
-%\item[-] 到 deadline 了进行震动提醒
-%\item[-] 状态可以自动更新
-\end{itemize}
-\end{rSubsection}
-
-
-\begin{rSubsection}{3.C++ TinyWebServer} {\em 2023.1 - 2023.3}
-{\\}
-{用C++实现了一个基于(线程池+epoll复用+主从状态机)的简易HTTP服务器，总共1000+行。}
-\item[]
-\begin{itemize}
-\setlength\itemsep{-0.5em}
-\item[-] 压测：腾讯云2核2G2M轻量云服务器，webbench测得10s内800次并发
-\end{itemize}
-{Github: \rm \url{https://github.com/L1uZQ/lzq_TinyWebServer}}
+\begin{rSubsection}{3.C++ TinyWebServer  } {\em 2023.1 - 2023.3}  \\
+{\textbf{项目介绍：}{用C++实现了一个基于(线程池+epoll复用+主从状态机)的简易HTTP服务器，总共1000+行。}} \\
+{\textbf{项目成果：}压力测试：腾讯云2核2G2M轻量云服务器，webbench测得10s内800次并发} \\ 
+%{ \quad - 压测：腾讯云2核2G2M轻量云服务器，webbench测得10s内800次并发} \\ 
+%\item[]
+%\begin{itemize}
+%\item[-] 压测：腾讯云2核2G2M轻量云服务器，webbench测得10s内800次并发
+%\setlength\itemsep{-0.5em}
+%\item[-] Github: \rm \url{https://github.com/L1uZQ/lzq_TinyWebServer}
+%\end{itemize}
+{}\quad {Github: \rm \url{https://github.com/L1uZQ/lzq_TinyWebServer}}
 \end{rSubsection}
 
 
@@ -142,7 +127,7 @@
 全国大学生数学竞赛(四川赛区)二等奖 & {\em 2021.12} \\
 国家励志奖学金 & {\em 2022} \\
 校优秀学生奖学金一等 & {\em 2022} \\
-第十一届中国卫星导航年会表现优秀志愿者 & {\em 2020.12} \\
+%第十一届中国卫星导航年会表现优秀志愿者 & {\em 2020.12} \\
 \end{tabular}
 \end{rSection}
 
@@ -160,8 +145,8 @@
 \begin{rSubsection}
 {}{}{}{}
 \item[-] GitHub: https://github.com/L1uZQ
-\item[-] 数学水平: 数学相关课程均满绩，平均分：89 \quad  英语水平: CET-6：511  CET-4：571.
-\item[-]专业课GPA: 3.85/4.00 \quad 目前全程成绩单：\rm \url{https://maifile.cn/est/a2606781672791/pdf}
+\item[-] 数学水平: 数学相关课程均满绩 \quad  英语水平: CET-6：511 \; CET-4：571.
+\item[-] 目前全程成绩单：\rm \url{https://maifile.cn/est/a3206786765856/pdf}
 \end{rSubsection}
 \end{rSection}
 
