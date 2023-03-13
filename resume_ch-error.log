@@ -1,0 +1,8 @@
+return {
+ ["filename"]="D:/Desktop/简历模板/resume_ch.tex",
+ ["lastcontext"]="\nl.23 \\documentclass\n                  {resume} % Use the custom resume.cls style",
+ ["lastluaerror"]="?",
+ ["lasttexerror"]="! Undefined control sequence",
+ ["linenumber"]=23,
+ ["offset"]=10,
+}
